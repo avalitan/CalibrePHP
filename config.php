@@ -1,4 +1,9 @@
 <?php
+/**
+ *  Config loader
+ *  
+ *  @author Avalitan <avalitan@avalitan.com>
+ */
 //require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 require dirname(__FILE__) . '/config/default.php';
@@ -26,4 +31,8 @@ if (file_exists(dirname(__FILE__) . '/' . $user_config_file) && (php_sapi_name()
 $user_config_file = 'config/.' . $remote_user . '.' . $remote_host . '.php';
 if (file_exists(dirname(__FILE__) . '/' . $user_config_file) && (php_sapi_name() !== 'cli')) {
 	require dirname(__FILE__) . '/' . $user_config_file;
+}
+
+function buildURL(array $option) {
+	
 }
