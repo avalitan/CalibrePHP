@@ -1,6 +1,6 @@
 <?php
 /**
- *  
+ *  Index file
  *  
  *  @author Avalitan <avalitan@avalitan.com>
  */
